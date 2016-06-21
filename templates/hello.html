@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+	<title>Hello Flask</title>
+	<style type="text/css">
+		{% include "static/hello.css" %}
+	</style>
+</head>
+<body>
+	{% if name=='Hamburger' %}
+		<h1>Eat Hamburger!</h1>  		
+  		<img style="max-width:200px" src= "http://www.hongya88.com.tw/archive/file/images/005.png">
+  	{% elif name %}
+  		<h1>Hello {{ name }}!</h1>
+  		<img style="max-height:250px" src= "http://kimia.upi.edu/utama/bahanajar/kuliah_web/2009/0700855/Hello.gif">
+	{% else %}
+  		<h1>Hello World!</h1>
+  		<img style="max-height:250px;margin-left:330px" src= "http://www.ettoday.net/events/earthday/images/earth.png">
+	{% endif %}
+</body>
+</html>
